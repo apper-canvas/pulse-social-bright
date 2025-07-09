@@ -1,0 +1,98 @@
+[
+  {
+    "Id": 1,
+    "conversationId": 1,
+    "senderId": 1,
+    "content": "Hey there! How's your day going?",
+    "type": "text",
+    "createdAt": "2024-01-15T10:30:00Z",
+    "updatedAt": "2024-01-15T10:30:00Z",
+    "isRead": true,
+    "readAt": "2024-01-15T10:31:00Z"
+  },
+  {
+    "Id": 2,
+    "conversationId": 1,
+    "senderId": 2,
+    "content": "Hi John! Going great, thanks for asking. Just finished a coding session. How about you?",
+    "type": "text",
+    "createdAt": "2024-01-15T10:32:00Z",
+    "updatedAt": "2024-01-15T10:32:00Z",
+    "isRead": true,
+    "readAt": "2024-01-15T10:33:00Z"
+  },
+  {
+    "Id": 3,
+    "conversationId": 1,
+    "senderId": 1,
+    "content": "That's awesome! I'm working on a new React project. What are you building?",
+    "type": "text",
+    "createdAt": "2024-01-15T10:35:00Z",
+    "updatedAt": "2024-01-15T10:35:00Z",
+    "isRead": true,
+    "readAt": "2024-01-15T10:36:00Z"
+  },
+  {
+    "Id": 4,
+    "conversationId": 1,
+    "senderId": 2,
+    "content": "I'm building a social media dashboard with Next.js and TypeScript. Really enjoying it!",
+    "type": "text",
+    "createdAt": "2024-01-15T14:20:00Z",
+    "updatedAt": "2024-01-15T14:20:00Z",
+    "isRead": false
+  },
+  {
+    "Id": 5,
+    "conversationId": 2,
+    "senderId": 3,
+    "content": "John, did you see the latest design trends for 2024?",
+    "type": "text",
+    "createdAt": "2024-01-16T09:15:00Z",
+    "updatedAt": "2024-01-16T09:15:00Z",
+    "isRead": true,
+    "readAt": "2024-01-16T09:20:00Z"
+  },
+  {
+    "Id": 6,
+    "conversationId": 2,
+    "senderId": 1,
+    "content": "Yes! The minimalist approach is really taking off. I love the clean aesthetics.",
+    "type": "text",
+    "createdAt": "2024-01-16T09:22:00Z",
+    "updatedAt": "2024-01-16T09:22:00Z",
+    "isRead": true,
+    "readAt": "2024-01-16T09:25:00Z"
+  },
+  {
+    "Id": 7,
+    "conversationId": 2,
+    "senderId": 3,
+    "content": "Exactly! I'm incorporating more white space and subtle animations in my designs.",
+    "type": "text",
+    "createdAt": "2024-01-16T16:45:00Z",
+    "updatedAt": "2024-01-16T16:45:00Z",
+    "isRead": false
+  },
+  {
+    "Id": 8,
+    "conversationId": 3,
+    "senderId": 4,
+    "content": "Hey John! Thanks for the follow. Love your content!",
+    "type": "text",
+    "createdAt": "2024-01-17T11:20:00Z",
+    "updatedAt": "2024-01-17T11:20:00Z",
+    "isRead": true,
+    "readAt": "2024-01-17T11:25:00Z"
+  },
+  {
+    "Id": 9,
+    "conversationId": 3,
+    "senderId": 1,
+    "content": "Thank you! I really appreciate the support. Keep up the great work with your photography!",
+    "type": "text",
+    "createdAt": "2024-01-17T12:30:00Z",
+    "updatedAt": "2024-01-17T12:30:00Z",
+    "isRead": false
+  }
+]

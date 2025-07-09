@@ -85,9 +85,9 @@ const UserProfile = ({ currentUser }) => {
     }
   };
 
-  const handleMessage = () => {
+const handleMessage = () => {
     // Navigate to messages with this user
-    navigate(`/messages/${user.id}`);
+    navigate(`/messages/${user.Id}`);
   };
 
   if (loading) {

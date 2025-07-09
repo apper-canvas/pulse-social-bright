@@ -7,7 +7,7 @@ import Profile from "@/components/pages/Profile";
 import Notifications from "@/components/pages/Notifications";
 import Search from "@/components/pages/Search";
 import CreatePost from "@/components/pages/CreatePost";
-
+import Messages from "@/components/pages/Messages";
 function App() {
   // Mock current user - in a real app, this would come from auth context
   const currentUser = {
@@ -24,13 +24,15 @@ function App() {
       <Header currentUser={currentUser} />
       
       <main>
-        <Routes>
+<Routes>
           <Route path="/" element={<Home currentUser={currentUser} />} />
           <Route path="/explore" element={<Explore currentUser={currentUser} />} />
           <Route path="/profile/:username" element={<Profile currentUser={currentUser} />} />
           <Route path="/notifications" element={<Notifications currentUser={currentUser} />} />
           <Route path="/search" element={<Search currentUser={currentUser} />} />
           <Route path="/create" element={<CreatePost currentUser={currentUser} />} />
+          <Route path="/messages" element={<Messages currentUser={currentUser} />} />
+          <Route path="/messages/:userId" element={<Messages currentUser={currentUser} />} />
         </Routes>
       </main>
 

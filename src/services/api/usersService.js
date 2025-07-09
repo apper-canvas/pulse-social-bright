@@ -54,7 +54,7 @@ export const usersService = {
     return { ...mockUsers[index] };
   },
 
-  async delete(id) {
+async delete(id) {
     await new Promise(resolve => setTimeout(resolve, 300));
     const index = mockUsers.findIndex(u => u.Id === parseInt(id));
     if (index === -1) {
@@ -62,5 +62,16 @@ export const usersService = {
     }
     mockUsers.splice(index, 1);
     return true;
+  },
+
+  async updateOnlineStatus(id, isOnline) {
+    await new Promise(resolve => setTimeout(resolve, 200));
+    const index = mockUsers.findIndex(u => u.Id === parseInt(id));
+    if (index === -1) {
+      throw new Error("User not found");
+    }
+    mockUsers[index].isOnline = isOnline;
+    mockUsers[index].lastSeen = new Date().toISOString();
+    return { ...mockUsers[index] };
   }
 };

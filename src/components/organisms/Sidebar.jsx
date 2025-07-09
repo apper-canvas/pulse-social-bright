@@ -13,9 +13,10 @@ const Sidebar = ({ currentUser, suggestions = [], trending = [] }) => {
     return location.pathname === path;
   };
 
-  const sidebarItems = [
+const sidebarItems = [
     { name: "Home", icon: "Home", path: "/" },
     { name: "Explore", icon: "Compass", path: "/explore" },
+    { name: "Messages", icon: "MessageCircle", path: "/messages" },
     { name: "Notifications", icon: "Bell", path: "/notifications" },
     { name: "Profile", icon: "User", path: `/profile/${currentUser?.username}` },
   ];

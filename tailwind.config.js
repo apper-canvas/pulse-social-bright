@@ -29,10 +29,13 @@ export default {
         display: ['Plus Jakarta Sans', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
       },
-      animation: {
+animation: {
         'spring-in': 'spring-in 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
         'float-up': 'float-up 0.3s ease-out',
         'shimmer': 'shimmer 2s linear infinite',
+        'message-in': 'message-in 0.3s ease-out',
+        'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'typing': 'typing 1.4s infinite ease-in-out',
       },
       keyframes: {
         'spring-in': {
@@ -44,9 +47,21 @@ export default {
           '0%': { transform: 'translateY(10px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
-        'shimmer': {
+'shimmer': {
           '0%': { backgroundPosition: '-468px 0' },
           '100%': { backgroundPosition: '468px 0' },
+        },
+        'message-in': {
+          '0%': { transform: 'translateY(10px) scale(0.95)', opacity: '0' },
+          '100%': { transform: 'translateY(0) scale(1)', opacity: '1' },
+        },
+        'pulse': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.5' },
+        },
+        'typing': {
+          '0%, 60%, 100%': { transform: 'translateY(0)' },
+          '30%': { transform: 'translateY(-10px)' },
         },
       },
     },
