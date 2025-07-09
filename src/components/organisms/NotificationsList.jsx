@@ -1,13 +1,14 @@
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import NotificationItem from "@/components/molecules/NotificationItem";
-import Loading from "@/components/ui/Loading";
-import Error from "@/components/ui/Error";
-import Empty from "@/components/ui/Empty";
-import Button from "@/components/atoms/Button";
-import ApperIcon from "@/components/ApperIcon";
-import { notificationsService } from "@/services/api/notificationsService";
 import { toast } from "react-toastify";
+import ApperIcon from "@/components/ApperIcon";
+import Button from "@/components/atoms/Button";
+import Empty from "@/components/ui/Empty";
+import Error from "@/components/ui/Error";
+import Loading from "@/components/ui/Loading";
+import Notifications from "@/components/pages/Notifications";
+import NotificationItem from "@/components/molecules/NotificationItem";
+import { notificationsService } from "@/services/api/notificationsService";
 
 const NotificationsList = ({ currentUser }) => {
   const [notifications, setNotifications] = useState([]);
@@ -104,12 +105,12 @@ const NotificationsList = ({ currentUser }) => {
           </Button>
         )}
       </div>
+</div>
 
-      {/* Notifications List */}
-      <div className="space-y-4">
-        {notifications.map((notification, index) => (
+      <div className="space-y-2">
+        {notifications?.map((notification, index) => (
           <motion.div
-            key={notification.id}
+            key={notification?.id ? `notification-${notification.id}` : `notification-${index}`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.05 }}
@@ -120,7 +121,6 @@ const NotificationsList = ({ currentUser }) => {
             />
           </motion.div>
         ))}
-      </div>
     </div>
   );
 };
