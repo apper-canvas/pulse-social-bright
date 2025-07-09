@@ -8,6 +8,12 @@ import Error from "@/components/ui/Error";
 import Loading from "@/components/ui/Loading";
 import Notifications from "@/components/pages/Notifications";
 import NotificationItem from "@/components/molecules/NotificationItem";
+import notificationsData from "@/services/mockData/notifications.json";
+import postsData from "@/services/mockData/posts.json";
+import messagesData from "@/services/mockData/messages.json";
+import usersData from "@/services/mockData/users.json";
+import followsData from "@/services/mockData/follows.json";
+import conversationsData from "@/services/mockData/conversations.json";
 import { notificationsService } from "@/services/api/notificationsService";
 
 const NotificationsList = ({ currentUser }) => {
@@ -100,12 +106,11 @@ const NotificationsList = ({ currentUser }) => {
             onClick={handleMarkAllAsRead}
             className="flex items-center gap-2"
           >
-            <ApperIcon name="CheckCheck" className="w-4 h-4" />
+<ApperIcon name="CheckCheck" className="w-4 h-4" />
             Mark all as read
           </Button>
         )}
       </div>
-</div>
 
       <div className="space-y-2">
         {notifications?.map((notification, index) => (
@@ -119,8 +124,9 @@ const NotificationsList = ({ currentUser }) => {
               notification={notification}
               onMarkAsRead={handleMarkAsRead}
             />
-          </motion.div>
+</motion.div>
         ))}
+      </div>
     </div>
   );
 };
