@@ -1,0 +1,142 @@
+[
+  {
+    "Id": 1,
+    "userId": 1,
+    "content": "Just shipped a new feature that I'm really excited about! The user feedback has been incredible so far. Nothing beats that feeling of seeing people use and love something you've built. #coding #webdev #react",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop"
+      }
+    ],
+    "hashtags": ["coding", "webdev", "react"],
+    "likes": 245,
+    "comments": 18,
+    "isLiked": false,
+    "createdAt": "2024-01-15T10:30:00Z"
+  },
+  {
+    "Id": 2,
+    "userId": 2,
+    "content": "Design inspiration from my morning coffee run ☕️ Sometimes the best ideas come from the simplest moments. The way light hits this cup is giving me ideas for our next UI update.",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=600&fit=crop"
+      }
+    ],
+    "hashtags": ["design", "inspiration", "coffee"],
+    "likes": 167,
+    "comments": 23,
+    "isLiked": true,
+    "createdAt": "2024-01-15T08:45:00Z"
+  },
+  {
+    "Id": 3,
+    "userId": 3,
+    "content": "Working on a new Node.js microservice architecture. The scalability improvements are looking promising! Docker containers make everything so much cleaner. #backend #nodejs #docker #microservices",
+    "media": [],
+    "hashtags": ["backend", "nodejs", "docker", "microservices"],
+    "likes": 89,
+    "comments": 12,
+    "isLiked": false,
+    "createdAt": "2024-01-14T16:20:00Z"
+  },
+  {
+    "Id": 4,
+    "userId": 4,
+    "content": "Golden hour photography session was absolutely magical today! There's something special about capturing that perfect moment when everything aligns. #photography #goldenhour #nature",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop"
+      }
+    ],
+    "hashtags": ["photography", "goldenhour", "nature"],
+    "likes": 412,
+    "comments": 34,
+    "isLiked": true,
+    "createdAt": "2024-01-14T19:15:00Z"
+  },
+  {
+    "Id": 5,
+    "userId": 5,
+    "content": "Just closed our Series A funding round! 🚀 Couldn't be more excited about what's next. Building a amazing team and product takes time, but the journey is worth it. #startup #entrepreneur #funding",
+    "media": [],
+    "hashtags": ["startup", "entrepreneur", "funding"],
+    "likes": 678,
+    "comments": 45,
+    "isLiked": false,
+    "createdAt": "2024-01-14T14:30:00Z"
+  },
+  {
+    "Id": 6,
+    "userId": 6,
+    "content": "Product roadmap planning session complete! Really excited about the features we're planning for Q2. User research is showing some fascinating insights about behavior patterns. #productmanagement #userresearch",
+    "media": [],
+    "hashtags": ["productmanagement", "userresearch"],
+    "likes": 134,
+    "comments": 16,
+    "isLiked": false,
+    "createdAt": "2024-01-13T11:45:00Z"
+  },
+  {
+    "Id": 7,
+    "userId": 1,
+    "content": "Late night coding session powered by determination and probably too much caffeine ☕️ Working on something that could change how we think about user authentication. #coding #latenight #innovation",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop"
+      }
+    ],
+    "hashtags": ["coding", "latenight", "innovation"],
+    "likes": 203,
+    "comments": 27,
+    "isLiked": true,
+    "createdAt": "2024-01-13T23:20:00Z"
+  },
+  {
+    "Id": 8,
+    "userId": 2,
+    "content": "New design system components are coming together beautifully! Consistency across all our products is finally becoming a reality. The developer handoff process is so much smoother now. #design #designsystem #ui",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&h=600&fit=crop"
+      }
+    ],
+    "hashtags": ["design", "designsystem", "ui"],
+    "likes": 298,
+    "comments": 31,
+    "isLiked": false,
+    "createdAt": "2024-01-13T15:10:00Z"
+  },
+  {
+    "Id": 9,
+    "userId": 3,
+    "content": "Refactoring legacy code is like archaeology - you never know what treasures (or horrors) you'll uncover! Found some gems hidden in there though. #refactoring #legacy #development",
+    "media": [],
+    "hashtags": ["refactoring", "legacy", "development"],
+    "likes": 156,
+    "comments": 22,
+    "isLiked": true,
+    "createdAt": "2024-01-12T09:30:00Z"
+  },
+  {
+    "Id": 10,
+    "userId": 4,
+    "content": "Street photography walk through the city revealed so many hidden stories. Every corner has a narrative waiting to be captured. #streetphotography #urban #storytelling",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&h=600&fit=crop"
+      }
+    ],
+    "hashtags": ["streetphotography", "urban", "storytelling"],
+    "likes": 387,
+    "comments": 28,
+    "isLiked": false,
+    "createdAt": "2024-01-12T17:45:00Z"
+  }
+]
