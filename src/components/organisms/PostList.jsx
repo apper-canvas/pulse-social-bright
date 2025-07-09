@@ -83,14 +83,13 @@ const PostList = ({ userId, type = "all", currentUser }) => {
     return <Error message={error} onRetry={loadPosts} type="general" />;
   }
 
-  if (posts.length === 0) {
+if (posts.length === 0) {
     return (
       <Empty
         type="posts"
         onAction={() => window.location.href = "/create"}
       />
     );
-);
   }
 
   return (
