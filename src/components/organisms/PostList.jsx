@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import PostCard from "@/components/organisms/PostCard";
-import Loading from "@/components/ui/Loading";
-import Error from "@/components/ui/Error";
-import Empty from "@/components/ui/Empty";
-import { postsService } from "@/services/api/postsService";
 import { toast } from "react-toastify";
+import PostCard from "@/components/organisms/PostCard";
+import Empty from "@/components/ui/Empty";
+import Error from "@/components/ui/Error";
+import Loading from "@/components/ui/Loading";
+import { postsService } from "@/services/api/postsService";
 
 const PostList = ({ userId, type = "all", currentUser }) => {
   const [posts, setPosts] = useState([]);
@@ -90,26 +90,29 @@ const PostList = ({ userId, type = "all", currentUser }) => {
         onAction={() => window.location.href = "/create"}
       />
     );
+);
   }
 
-return (
-    <div className="space-y-6">
-      {posts.map((post, index) => (
-        <motion.div
-          key={post?.id ? `post-${post.id}` : `post-index-${index}`}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: index * 0.1 }}
-        >
-          <PostCard
-            post={post}
-            onLike={handleLike}
-            onComment={handleComment}
-            onShare={handleShare}
-            currentUser={currentUser}
-          />
-        </motion.div>
-      ))}
+  return (
+    <div className="space-y-4">
+      {posts
+        .filter(post => post && typeof post === 'object')
+        .map((post, index) => (
+          <motion.div
+            key={post.id || `post-${post.timestamp || Date.now()}-${post.author?.id || 'unknown'}-${index}`}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+          >
+            <PostCard
+              post={post}
+              onLike={handleLike}
+              onComment={handleComment}
+              onShare={handleShare}
+              currentUser={currentUser}
+            />
+          </motion.div>
+        ))}
     </div>
   );
 };
